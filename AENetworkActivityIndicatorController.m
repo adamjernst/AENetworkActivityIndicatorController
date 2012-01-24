@@ -12,7 +12,7 @@
 }
 @end
 
-#define ASSERT_MAIN_THREAD (NSAssert([NSThread isMainThread], @"Call -beginNetworkActivity or -endNetworkActivity only from the main thread."))
+#define ASSERT_MAIN_THREAD NSAssert([NSThread isMainThread], @"Call -beginNetworkActivity or -endNetworkActivity only from the main thread.")
 
 @implementation AENetworkActivityIndicatorController
 
